@@ -1,0 +1,41 @@
+<div class="main-content backgroudColor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-6">                             
+                    <app-totalconfirmed [total_confirmed]="total_confirmed" ></app-totalconfirmed>               
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <app-totaldeath [total_death]="total_deaths"></app-totaldeath>
+            </div>
+           <div class="col-lg-2 col-md-6 col-sm-6">
+               <app-totalrecovered [total_recovered]="total_recovered"></app-totalrecovered>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <app-totalsuspected [total_suspected]="total_suspected"></app-totalsuspected>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+               <app-totalrecovery [total_cases]="total_cases" [total_recovered]="total_recovered" ></app-totalrecovery>
+            </div>
+        </div>
+
+        <!-- top-->
+        <div class="row">
+            <div class="col-md-4">
+                <app-recovertyanddeathrates ></app-recovertyanddeathrates>
+            </div>
+            <div class="col-md-6">
+               <app-totalreport [new_deaths]="new_deaths" [new_cases]="new_cases"></app-totalreport>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <app-dailycases></app-dailycases>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <app-dailyrecoveries></app-dailyrecoveries>
+            </div>
+        </div>
+    </div>
+  </div>
+  

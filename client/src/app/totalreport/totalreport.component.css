@@ -1,0 +1,16 @@
+.backgroudColor {
+    background-color: #36394B;
+    color: white;
+}
+
+.newCases {
+    color: #77B6FF;
+}
+
+.newDeaths {
+    color: #D16868;
+}
+
+.newRecovered {
+    color:#59A180;
+}

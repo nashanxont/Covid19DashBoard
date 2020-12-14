@@ -1,0 +1,7 @@
+{
+    "/api/*" : {
+        "target" : "https://hpb.health.gov.lk/",
+        "secure" : false,
+        "logLevel" : "debug"
+    }
+}
