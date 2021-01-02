@@ -8,18 +8,29 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TotalrecoveryComponent implements OnInit {
 
+  @Input() total_cases : number;
+  @Input() total_recovered : number;
+  recoveryRate : number;
+
   constructor() { }
 
-  @Input() total_cases : Number;
-  @Input() total_recovered : Number;
-  local_total_cases:Number;
-  local_total_recovery:Number;
-  recoveryRate : Number;
+  
 
   ngOnInit(): void {
-    this.local_total_cases = this.total_cases;
-    this.local_total_recovery = this.total_recovered;
-    
+      //this.setData();
+  }
+  
+  ngOnChanges():void{
+    this.setData();
+  }
+
+
+ 
+  setData(){
+    if(this.total_cases > 0)
+      this.recoveryRate = (this.total_recovered/this.total_cases)*100;
+    else
+      this.recoveryRate =0;
   }
 
   

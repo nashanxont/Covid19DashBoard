@@ -1,17 +1,20 @@
-<div class="card card-chart backgroudColor">
-    <div class="card-header card-header-success">
-        <div class="ct-chart" id="dailySalesChart"></div>
+<div class="recoveryRateSecton">
+    <div class="reecoverRateSectiontext">
+        <h4>Recovery Rate and Death Rate</h4>
+        <p class="reecoverRateSectiontext-recovery">Recovery Rate</p>
+        <p class="reecoverRateSectiontext-rate-value">{{(recoveryRate).toFixed(2)}}%</p>
+        <p class="reecoverRateSectiontext-recovery">Death Rate</p>
+        <p class="reecoverRateSectiontext-death-value">{{(deathRate).toFixed(2)}}%</p>
     </div>
-    <div class="card-body">
-        <h4 class="card-title">Recovery and Death Rate</h4>
-        <p class="card-category">
-            <span class="text-success newCases"><i class="fa fa-long-arrow-up"></i> Recovery Rate 55% </span></p>
-            <p class="card-category">
-                <span class="text-success newDeaths"><i class="fa fa-long-arrow-up"></i> Death Rate 55% </span></p>
-        
-        <div class="card-icon">
-            <img src="./assets/images/sri lanka.png" width="40px" height="60px" alt="image">
-        </div>        
-    </div>
-    
+    <div class="recoveryRateSectionCover">
+        <img src="./assets/img/sri lanka.png">
+        <div class="rateCircle">
+            <p>{{(recoveryRate).toFixed(2)}}%</p>
+        </div>
+        <div class="deathCircle">
+            <p>{{(deathRate).toFixed(2)}}%</p>
+        </div>
+    </div>           
+   
+
 </div>

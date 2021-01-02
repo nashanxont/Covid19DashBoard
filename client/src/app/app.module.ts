@@ -15,6 +15,7 @@ import { TotalreportComponent } from './totalreport/totalreport.component';
 import { DailycasesComponent } from './dailycases/dailycases.component';
 import { DailyrecoveriesComponent } from './dailyrecoveries/dailyrecoveries.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
 
   ],
   providers: [],

@@ -1,0 +1,83 @@
+.chartSection{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 50vh;
+   
+}
+
+.daily-new-cases-chart{
+    width: 44vw;
+    margin: 0 10px 10px 0;
+    border-top: 2px solid #77B6ff;
+    height: 80%;
+    padding: 0px;
+    border-radius: 10px; 
+    display: flex;   
+    background-color: #36394B;
+    opacity: .7;
+    flex-direction: column; 
+}
+
+.daily-recovery-chart{
+    width: 44vw;
+    margin: 0 10px 10px 0;
+    border-top: 2px solid #59A180;
+    height: 80%;
+    padding: 0px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #36394B;
+    opacity: 0.7;
+    flex-direction: column; 
+}
+
+.daily-new-cases-text{
+    height: 20%;
+    margin: 0 10px;
+}
+
+.daily-new-cases-text h4{
+    font-size: 20px;
+    margin: 5px 0;
+    color: #77B6ff;
+}
+
+.daily-new-cases-text p {
+    font-size: 12px;
+    margin: 0 0 3px 0;
+}
+   
+
+.daily-new-cases-chartArea{
+    position: relative;
+    margin: 0;
+    width:70%;
+    height: 50%;
+    display: block;
+}
+
+.daily-recovery-chart-text{
+    height: 20%;
+    margin: 0 10px;
+}
+
+.daily-recovery-chart-text h4{
+    font-size: 20px;
+    margin: 5px 0;
+    color: #59A180;
+}
+
+.daily-recovery-chart-text p {
+    font-size:  12px;
+    margin: 0;
+}
+
+.daily-recovery-chart-chartArea{
+    position: relative;
+    margin: 0;
+    width:70%;
+    height: 50%;
+    display: block;
+}
+

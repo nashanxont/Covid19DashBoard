@@ -1,31 +1,38 @@
-<div class="card card-chart backgroudColor">
-    <div class="card-header card-header-warning">
-        <div class="ct-chart" id="websiteViewsChart"></div>
+<div class="todaysReportSection">
+    <div class="todaysReportSectionHeading">
+        <h4>Todays Report - {{CurrentDateString}}</h4>
     </div>
-    <div class="card-body">
-        <h4 class="card-title">Today's Report</h4>
-        <p class="card-category">{{CurrentDate}}</p>
-    </div>
-    <div class="card-footer">
-        <div class="card-icon">
-            <div class="row">
-                <div class="col-md-2">
-                    <h3 class="newCases">{{new_cases}}</h3>
-                    <img src="./assets/images/new-cases.png" width="40px" height="60px" alt="image">
-                </div>
-                <div class="col-md-2">
-                    <h3 class="newDeaths">{{new_deaths}}</h3>
-                    <img src="./assets/images/recoveries.png" width="40px" height="60px" alt="image">
-                </div>
-                <div class="col-md-2">
-                    <h3 class="newRecovered">{{new_deaths}}</h3>
-                    <img src="./assets/images/deaths.png" width="40px" height="60px" alt="image">
-                </div>
+    <div class="todaysReportSectionDetail">
+        <div class="todaysReportSectionDetail-item">
+            <div class="todaysReportSectionDetail-item-heading">
+                <p>New Cases</p>
             </div>
-            
-           
-       
-            
+            <div class="todaysReportSectionDetail-item-detail">
+                <h1 class="newCaseVale">{{new_cases}}</h1>
+                <img src="./assets/img/new-cases.png">
+            </div>
+        </div>
+        <div class="todaysReportSectionDetail-item">
+            <div class="todaysReportSectionDetail-item-heading">
+                <p>New Deaths</p>
+            </div>
+             <div class="todaysReportSectionDetail-item-detail">
+                <h1 class="newDeathsValue">{{new_deaths}}</h1>
+                <img src="./assets/img/deaths.png">
+            </div>
+        </div>
+        <div class="todaysReportSectionDetail-item3">
+            <div class="todaysReportSectionDetail-item-heading">
+                <p>New Recoveries</p>
+            </div>
+            <div class="todaysReportSectionDetail-item-detail">
+                <h1 class="newRecoveriesValue">0</h1>
+                <img src="./assets/img/recoveries.png">
+            </div>
         </div>
     </div>
+   <div class="todaysReportSectionFooter">
+    <p>* New Cases Updated Regularly</p>
+   </div>
+   
 </div>

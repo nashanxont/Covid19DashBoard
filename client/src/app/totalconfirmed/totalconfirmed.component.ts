@@ -10,8 +10,12 @@ export class TotalconfirmedComponent implements OnInit {
   constructor() { }
 
   @Input() total_confirmed : number;
-
+  total_confirmedString:string;
   ngOnInit(): void {
+  }
+
+  ngOnChanges(){
+    this.total_confirmedString = this.total_confirmed.toLocaleString();
   }
 
 }

@@ -1,8 +1,15 @@
-<div class="card backgroudColor">
-    <div class="card-header card-header-tabs card-header-primary">
-        
+<div class="daily-recovery-chart">
+    <div class="daily-recovery-chart-text">
+        <h4>Daily Recoveries in Sri Lanka</h4>
+        <p>{{reportDateRange}}</p>
     </div>
-    <div class="card-body">
-        <h3 class="card-title">Daily Recoveries in Sri Lanka</h3>
+    <div class="daily-recovery-chart-chartArea">
+        <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType">
+    </canvas>
     </div>
 </div>

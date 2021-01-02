@@ -1,0 +1,204 @@
+.totalSecondSection{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 35vh;
+}
+
+.recoveryRateSecton{
+    width:35vw;
+    margin: 10px 10px 0 0;
+    border: 1px solid #010F31;
+    height: 90%;
+    padding: 0px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #36394B;
+    opacity: 0.7;
+}
+
+.reecoverRateSectiontext{
+    flex: 1;
+    margin-left: 10px;
+    
+}
+
+.reecoverRateSectiontext h4{
+   font-size: 18px;
+   margin: 10px 0 0 0 ;
+}
+
+.reecoverRateSectiontext-recovery{
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.reecoverRateSectiontext-rate-value{
+    font-size: 25px;
+    color: #59A180;
+    margin-top: 0px;
+
+}
+
+.reecoverRateSectiontext-death-value{
+    font-size: 25px;
+    color: #D16868;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.recoveryRateSectionCover{
+    position: relative;
+    flex: 2;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recoveryRateSectionCover img{    
+    height: 30vh;
+    margin-top: 0px;
+}
+
+
+
+
+.rateCircle{
+    position: absolute;
+    border-radius: 100%;
+    background:url("./assets/img/recovery-buble.png") no-repeat;
+    background-size: 100%;
+    border: 1px solid white;
+    top:40%;
+    height: 12vh;
+    width: 28%;
+    display: flex;
+    justify-content: center;    
+}
+
+.rateCircle p{
+    font-size: 15px;
+    margin-top: 2vh;
+}
+
+.deathCircle{
+    position: absolute;
+    border-radius: 100%;
+    background: #D16868;
+    border: 1px solid white;
+    top:58%;
+    height: 5vh;
+    width: 12%; 
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.deathCircle p {
+    font-size: 12px;
+    margin-top: 1vh;
+}
+
+.todaysReportSection{
+    width:53vw;
+    margin: 10px 10px 0 0;
+    border: 1px solid #010F31;
+    height: 90%;
+    padding: 0px;
+    border-radius: 10px;
+    display: flex;    
+    flex-direction: column;
+    background-color:  linear-gradient(to right,#36394B, #d7d8e0); 
+    background: #36394B url("./assets/img/background-map.png") no-repeat;
+    background-size: 50%;
+    background-position: 70% 60%;   
+    opacity: .7; 
+   }
+
+
+.todaysReportSectionHeading{
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.todaysReportSectionHeading h4{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.todaysReportSectionDetail{
+    height: 45%;   
+    display: flex;
+}
+
+.todaysReportSectionFooter{
+    height: 20%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todaysReportSectionFooter p{
+    font-size: 10px;
+}
+
+
+.todaysReportSectionDetail-item{
+  width:33%;
+  border-right: 1px solid white;
+  margin: 0;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.todaysReportSectionDetail-item3{
+    width:33%;
+    margin: 0;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.todaysReportSectionDetail-item-heading{
+    height: 20%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todaysReportSectionDetail-item-heading p{
+    font-size: 12px;
+}
+
+.todaysReportSectionDetail-item-detail {
+    height: 80%;   
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.todaysReportSectionDetail-item-detail h1{
+    font-size: 45px;
+    margin-right: 8px;
+}
+
+.todaysReportSectionDetail-item-detail img{
+    height: 38%;
+}
+
+.newCaseVale{
+    color: #77B6FF;
+}
+
+.newDeathsValue{
+    color:#D16868;
+}
+
+.newRecoveriesValue{
+    color:#59A180;
+}
+
+
+
+

@@ -9,9 +9,13 @@ export class TotalrecoveredComponent implements OnInit {
 
   constructor() { }
   
-  @Input() total_recovered : Number;
-
+  @Input() total_recovered : number;
+  total_recoveredString :string;
   ngOnInit(): void {
+  }
+
+  ngOnChanges(){
+    this.total_recoveredString = this.total_recovered.toLocaleString();
   }
 
 }

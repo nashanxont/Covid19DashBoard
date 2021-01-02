@@ -8,7 +8,7 @@ import { DashboardService} from '../dashboard.service'
 })
 export class DashboardComponent implements OnInit {
 
-  public allData : any = {};
+  
   public total_deaths = 0;
   public total_confirmed = 0;
   public total_recovered = 0;
@@ -16,18 +16,19 @@ export class DashboardComponent implements OnInit {
   public total_cases = 0;
   public new_deaths = 0;
   public new_cases =0;
+  public dailyCasesArray:any[]=[];
 
   constructor(private dashbaordService : DashboardService) { }
 
   ngOnInit(): void {
     this.getAllCurrentHealthData();
+   
   }
 
   getAllCurrentHealthData(){
     this.dashbaordService.getCurrentStatisticalData().subscribe(
       (data : any)=>{
         console.log(data);
-        this.allData = data.data;
         this.total_deaths = data.data.local_deaths;
         this.total_confirmed = data.data.local_total_cases;
         this.total_recovered = data.data.local_recovered;
@@ -35,10 +36,15 @@ export class DashboardComponent implements OnInit {
         this.total_cases = data.data.local_total_cases;
         this.new_deaths = data.data.local_new_deaths;
         this.new_cases  = data.data.local_new_cases; 
+        this.dailyCasesArray = data.data.daily_pcr_testing_data;
+        console.log("total_cases1"+this.total_cases);
+      },
+      (error)=>{
+        console.log(error);
       }
     );
 
-    localStorage.setItem('AllCurrentData',JSON.stringify(this.allData));
+    
   }
 
 }

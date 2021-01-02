@@ -1,41 +1,55 @@
-<div class="main-content backgroudColor">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-2 col-md-6 col-sm-6">                             
-                    <app-totalconfirmed [total_confirmed]="total_confirmed" ></app-totalconfirmed>               
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <app-totaldeath [total_death]="total_deaths"></app-totaldeath>
-            </div>
-           <div class="col-lg-2 col-md-6 col-sm-6">
-               <app-totalrecovered [total_recovered]="total_recovered"></app-totalrecovered>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <app-totalsuspected [total_suspected]="total_suspected"></app-totalsuspected>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-               <app-totalrecovery [total_cases]="total_cases" [total_recovered]="total_recovered" ></app-totalrecovery>
-            </div>
-        </div>
-
-        <!-- top-->
-        <div class="row">
-            <div class="col-md-4">
-                <app-recovertyanddeathrates ></app-recovertyanddeathrates>
-            </div>
-            <div class="col-md-6">
-               <app-totalreport [new_deaths]="new_deaths" [new_cases]="new_cases"></app-totalreport>
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col-lg-5 col-md-12">
-                <app-dailycases></app-dailycases>
-            </div>
-            <div class="col-lg-5 col-md-12">
-                <app-dailyrecoveries></app-dailyrecoveries>
-            </div>
-        </div>
+<header class="header">
+    <div class="first">
+        <p>Health Promotion Beruea</p>
     </div>
-  </div>
-  
+    <div class="second">
+        <h2>HEALTH</h2>
+        <p>Inspire the Next</p>
+    </div>
+    <div class="last">
+        <p>Healths Ministry</p>
+    </div>
+</header>
+
+<main>
+    <section class="dashbaordheading">
+        <div class="firstContent">
+            <img src="./assets/img/virus.png">
+            <h1>Covid 19 Report Sri Lanka</h1>
+        </div>
+        <div class="secondContent">
+            <div class="firstDiv"></div>
+            <div class="seconDiv"></div>
+        </div>
+    </section>
+
+    <section class="totalSection">
+
+        <app-totalconfirmed [total_confirmed]="total_confirmed" ></app-totalconfirmed>  
+        <!--total Confirmed-->
+        
+        <!--totalDeath-->
+        <app-totaldeath [total_death]="total_deaths"></app-totaldeath>
+         
+        <app-totalrecovered [total_recovered]="total_recovered"></app-totalrecovered>
+
+        <app-totalsuspected [total_suspected]="total_suspected"></app-totalsuspected>
+
+        <app-totalrecovery [total_cases]="total_cases" [total_recovered]="total_recovered" ></app-totalrecovery>
+        
+       
+        
+    </section>
+
+    <section class="totalSecondSection">
+        <app-recovertyanddeathrates [total_deaths]="total_deaths" 
+                    [total_cases]="total_cases" [total_recovered]="total_recovered">
+        </app-recovertyanddeathrates>
+        <app-totalreport [new_deaths]="new_deaths" [new_cases]="new_cases"></app-totalreport>
+    </section>
+
+    <section class="chartSection">
+        <app-dailycases [dailyCasesArray]="dailyCasesArray"></app-dailycases>
+        <app-dailyrecoveries [dailyCasesArray]="dailyCasesArray"></app-dailyrecoveries>
+    </section>
+</main>

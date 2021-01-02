@@ -9,7 +9,7 @@ export class TotalsuspectedComponent implements OnInit {
 
   constructor() { }
 
- @Input() total_suspected : Number;
+ @Input() total_suspected : number;
 
   ngOnInit(): void {
   }
